@@ -1,0 +1,37 @@
+STRUCTURE ET INFORMATIONS DU SITE WEB DE L'AGENCE
+
+1. **Structure du Projet**
+   - Ce site est développé en PHP procédural, en utilisant le modèle MVC. Il n’utilise pas de routeur, chaque page est accessible via des chemins relatifs.
+
+2. **Rôle des Dossiers**
+   - **controllers/** : Ce dossier contient les fichiers PHP responsables de la logique de traitement pour chaque fonctionnalité du site. Chaque fichier de contrôleur prend en charge la gestion des requêtes, le traitement des données, et la transmission des informations aux vues.
+   
+   - **models/** : Les fichiers de ce dossier contiennent les interactions avec la base de données. Chaque modèle gère les requêtes pour récupérer, insérer, mettre à jour, ou supprimer les données dans la base de données MySQL.
+   
+   - **views/** : Ce dossier regroupe les fichiers de présentation. Chaque fichier de vue est une page qui affiche les informations au visiteur et inclut les éléments d’interface utilisateur (HTML, CSS, Bootstrap). Les fichiers de vue sont appelés par les contrôleurs pour afficher les informations traitées.
+   
+   - **assets/** : Ce dossier contient les ressources statiques du site, telles que les fichiers CSS, les images, et les fichiers JavaScript.
+   
+   - **config/** : Dossier qui contient les fichiers de configuration du projet, comme les paramètres de connexion à la base de données.
+   
+   - **includes/** : Ce dossier regroupe les fonctions PHP réutilisables, les parties de pages communes (en-tête, pied de page) et autres inclusions essentielles au site.
+   
+3. **Polices Utilisées**
+   - **Titres** : Poppins
+   - **Paragraphes** : Open Sans (une police élégante et lisible qui se marie bien avec Poppins)
+
+4. **Modèle MVC Procédural**
+   - Le modèle MVC est appliqué dans une structure simple sans routeur. Les chemins relatifs sont utilisés pour inclure les fichiers et naviguer entre les pages.
+   - **Controllers** : Appelés directement selon les interactions des utilisateurs.
+   - **Views** : Les vues sont incluses par les contrôleurs pour afficher les données finales.
+
+5. **Conventions de Nomination**
+   - **Fichiers** : Noms en minuscules avec des underscores (par exemple : `accueil.php`, `contact_controller.php`).
+   - **Classes et Fonctions** : Les classes utilisent le CamelCase (par exemple : `ClientManager`), et les fonctions sont en snake_case (par exemple : `get_client_data`).
+
+6. **Commentaires et Documentation***
+   - Chaque fichier inclut des commentaires explicatifs pour faciliter la compréhension du code, et une documentation succincte est présente dans les fonctions clés pour améliorer la lisibilité et la maintenance du projet.
+
+---
+
+Ce fichier info.txt peut être mis à jour en cas de modifications structurelles ou de nouvelles conventions.
